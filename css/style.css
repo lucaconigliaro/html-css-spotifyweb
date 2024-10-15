@@ -37,6 +37,9 @@ ul {
     background-color: #000000;
     color: white;
     font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .library-list {
