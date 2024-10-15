@@ -17,7 +17,14 @@ ul {
     list-style: none;
 }
 
+/* Utilities */
+.white {
+    color: white;
+}
 
+.gray {
+    color: gray;
+}
 
 /* COMMON */
 /* Layout */
@@ -35,7 +42,6 @@ ul {
     height: calc(100vh - 70px);
     padding: 15px;
     background-color: #000000;
-    color: white;
     font-size: 0.7rem;
     display: flex;
     flex-direction: column;
@@ -64,7 +70,6 @@ ul {
 }
 .playlist-title {
     font-size: 1rem;
-    color: white;
 }
 
 .library-profile {
@@ -119,9 +124,28 @@ ul {
     border-radius: 20px;
     padding: 10px 15px;
     font-size: 0.7rem;
-    color: white;
 }
 
+/* Section album  */
+.section {
+    padding: 20px
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col{
+    text-align: center;
+    width: calc(95%/2)
+}
+
+.img-album {
+    width: 150px;
+    margin-top: 10px;
+}
 
 
 
@@ -148,9 +172,6 @@ ul {
 .library {
     width: 170px;
     height: calc(100vh - 70px);
-    padding: 15px;
-    background-color: #000000;
-    color: white;
 }
 
 .text-none {
@@ -161,8 +182,6 @@ ul {
 .main-page {
     width: calc(100% - 170px);
     height: calc(100vh - 70px);
-    overflow: auto;
-    background-color: #141922;
 }
 
 .logo-none {
@@ -172,5 +191,8 @@ ul {
 .library-hr {
     display: inline-block;
 }
-    
+.col{
+    text-align: center;
+    width: calc(93%/2)
+}
 }
