@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* COMMON */
+/* Layout */
+
+/* MAIN */
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+/* Sidebar */
+.library {
+    width: 150px;
+    height: calc(100vh - 70px);
+
+    /* debug */
+    background-color: lightblue;
+}
+
+
+/* Main page */
+.main-page {
+    width: calc(100% - 150px);
+    height: calc(100vh - 70px);
+    overflow: auto;
+
+    /* debug */
+    background-color: lightgreen;
+}
+
+/* Upgrade button */
+.header-button {
+    text-align: end;
+}
+
+
+/* FOOTER */
+.footer {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+
+    /* debug */
+    background-color: lightpink;
+}
