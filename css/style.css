@@ -167,7 +167,7 @@ ul {
 /****************/
 
 
-@media screen and ( min-width:321px) {
+@media screen and ( min-width:425px) {
     /* Sidebar */
 .library {
     width: 170px;
@@ -191,8 +191,26 @@ ul {
 .library-hr {
     display: inline-block;
 }
+
+/* Section album  */
 .col{
-    text-align: center;
     width: calc(93%/2)
 }
+}
+
+
+@media  screen and (min-width: 768px) {
+    /* Section album  */
+.col{
+    width: calc(93%/4)
+}
+    
+}
+
+@media  screen and (min-width: 1025px) {
+    /* Section album  */
+.col{
+    width: calc(93%/6)
+}
+    
 }
