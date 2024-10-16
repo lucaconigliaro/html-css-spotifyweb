@@ -147,6 +147,10 @@ ul {
     margin-top: 10px;
 }
 
+.top-artist {
+    border-radius: 50%;
+}
+
 
 
 /* FOOTER */
@@ -167,7 +171,7 @@ ul {
 /****************/
 
 
-@media screen and ( min-width:425px) {
+@media screen and ( min-width:376px) {
     /* Sidebar */
 .library {
     width: 170px;
@@ -199,7 +203,7 @@ ul {
 }
 
 
-@media  screen and (min-width: 768px) {
+@media  screen and (min-width: 426px) {
     /* Section album  */
 .col{
     width: calc(93%/4)
@@ -207,7 +211,7 @@ ul {
     
 }
 
-@media  screen and (min-width: 1025px) {
+@media  screen and (min-width: 769px) {
     /* Section album  */
 .col{
     width: calc(93%/6)
