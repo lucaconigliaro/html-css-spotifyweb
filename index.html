@@ -36,8 +36,8 @@
                 <!-- Liste -->
                 <div>
                     <ul class="library-list gray">
-                        <li><a href=""><i class="fa-solid fa-house border-lightgreen-left"></i> <span
-                                    class="text-none">Home</span></a></li>
+                        <li><a href=""><i class="fa-solid fa-house border-lightgreen-left white little"></i> <span
+                                    class="text-none white little">Home</span></a></li>
                         <li><a href=""><i class="fa-solid fa-magnifying-glass"></i> <span
                                     class="text-none">Cerca</span></a>
                         </li>
@@ -82,16 +82,16 @@
             <div class="header-button">
                 <a class="upgrade-btn white" href="">EFFETTUA L'UPGRADE</a>
             </div>
-            <div class="nav-list">
+            <nav class="nav-list">
                 <ul>
-                    <li><a class="border-lightgreen-bottom" href=""><strong>IN EVIDENZA</strong></a></li>
-                    <li><a href=""><strong>PODCAST</strong></a></li>
-                    <li><a href=""><strong>CLASSIFICHE</strong></a></li>
-                    <li><a href=""><strong>GENERI E MOOD</strong></a></li>
-                    <li><a href=""><strong>NUOVE USCITE</strong></a></li>
-                    <li><a href=""><strong>SCOPRI</strong></a></li>
+                    <li><a class="border-lightgreen-bottom" href="">IN EVIDENZA</a></li>
+                    <li><a href="">PODCAST</a></li>
+                    <li><a href="">CLASSIFICHE</a></li>
+                    <li><a href="">GENERI E MOOD</a></li>
+                    <li><a href="">NUOVE USCITE</a></li>
+                    <li><a href="">SCOPRI</a></li>
                 </ul>
-            </div>
+            </nav>
 
             <!-- Section Album -->
             <section class="section">
@@ -201,7 +201,7 @@
                 <img class="footer-song" src="./img/sinister.jpeg" alt="">
                 <div>
                     <h5 class="white little">Sinister</h5>
-                    <p class="gray">Brano Nome</p>
+                    <p class="gray song-name">Brano Nome</p>
                 </div>
                 <div class="pad-20">
                     <i class="fa-regular fa-heart gray"></i>
@@ -209,16 +209,15 @@
                 </div>
                 <div class="white large center-play white">
                     <div class="top mb-15">
-                        <i class="fa-solid fa-shuffle pad-5"></i>
-                        <i class="fa-solid fa-backward-step pad-5"></i>
-                        <i class="fa-regular fa-circle-play pad-10"></i>
-                        <i class="fa-solid fa-forward-step pad-5"></i>
-                        <i class="fa-solid fa-rotate-right pad-5"></i>
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play play-btn-hov"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
                     </div>
                     <div class="bottom ">
-                        <p class="small">0:25</p> 
-                        <hr class="hr-song">
-                        <hr class="hr-song-2">
+                        <p class="small">0:25</p>
+                        <span class="song-bar"></span><span class="song-bar2"></span>
                         <p class="small">4:23</p>
                     </div>
                 </div>
@@ -226,8 +225,9 @@
                     <i class="fa-solid fa-list-ul gray pad-5"></i>
                     <i class="fa-solid fa-desktop gray pad-5"></i>
                     <i class="fa-solid fa-volume-high gray pad-5"></i>
-                    <hr class="hr-volume">
-                    <hr class="hr-volume-2">
+                    <span class="volume-bar"></span>
+                    <span class="volume-bar2"></span>
+
                 </div>
             </div>
         </div>
