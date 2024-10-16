@@ -17,6 +17,10 @@ ul {
     list-style: none;
 }
 
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
 /* Utilities */
 .white {
     color: white;
@@ -24,19 +28,60 @@ ul {
 
 .gray {
     color: gray;
+    font-size: x-small
 }
 
-.border-lightgreen-bottom::after{
-    content: "";
-    display: flex;
-    width: 40%;
-    height: 2px;
-    background-color: #ADFF2F;
-    margin-top: 5px;
-    margin-left: 20px;
+.text-none {
+    display: none;
+}
+
+.little {
+    font-size: small
+}
+
+.medium {
+    font-size: 1rem;
+}
+
+.big {
+    font-size: 1.3rem;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mt-10 {
+    margin-top: 10px;
 }
 
 
+
+/* HOVER */
+.library li:hover {
+    color: white;
+}
+
+.fa-plus-square:hover {
+    color: white;
+}
+
+.nav-list li:hover {
+    color: white;
+}
+
+.header-button a:hover {
+    transform: scale(1.1);
+  
+}
+
+.cursor-text:hover{
+    cursor: text
+}
 
 /* COMMON */
 /* Layout */
@@ -58,11 +103,11 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
 
 .library-list {
     padding-top: 5px;
-    color: gray;
     line-height: 1.5rem;
     margin-bottom: 15px;
 }
@@ -71,8 +116,8 @@ ul {
     width: 20px;
 }
 
-.text-none {
-    display: none;
+.new-playlist {
+    display: flex;
 }
 
 .playlist-list {
@@ -80,8 +125,10 @@ ul {
     color: gray;
     line-height: 1.5rem;
 }
-.playlist-title {
-    font-size: 1rem;
+
+.fa-plus-square {
+    font-size: x-large;
+    margin-right: 0.5rem;
 }
 
 .library-profile {
@@ -119,13 +166,29 @@ ul {
     color: gray;
     font-size: 0.7rem;
     justify-content: center;
+    padding-top: 80px;
+}
+
+.border-lightgreen-bottom::after{
+    content: "";
+    display: flex;
+    width: 40%;
+    height: 2px;
+    background-color: #ADFF2F;
+    margin-top: 5px;
+    margin-left: 20px;
 }
 
 /* Upgrade button */
 .header-button {
     text-align: end;
     padding: 20px;
-    background-color: #080B12;
+    background-color: #3333;
+    position: fixed;
+    height: 70px;
+    width: calc(100% - 50px);
+    top: 0;
+    right: 0;
 }
 
 .upgrade-btn {
@@ -188,6 +251,21 @@ ul {
 .library {
     width: 170px;
     height: calc(100vh - 70px);
+    text-align: left;
+}
+
+.border-lightgreen-left {
+    position: relative;
+}
+
+.border-lightgreen-left::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -100%;
+    width: 2px;
+    height: 20px;
+    background-color: #ADFF2F; */
 }
 
 .text-none {
@@ -195,6 +273,10 @@ ul {
 }
 
 /* Main page */
+
+.header-button {
+    width: calc(100% - 170px);
+}
 .main-page {
     width: calc(100% - 170px);
     height: calc(100vh - 70px);
@@ -213,19 +295,7 @@ ul {
     width: calc(93%/2)
 }
 
-.border-lightgreen-left {
-    position: relative;
-}
-.border-lightgreen-left::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: -100%;
-    display: flex;
-    width: 2px;
-    height: 15px;
-    background-color: #ADFF2F;
-}
+
 }
 
 
