@@ -26,6 +26,18 @@ ul {
     color: gray;
 }
 
+.border-lightgreen-bottom::after{
+    content: "";
+    display: flex;
+    width: 40%;
+    height: 2px;
+    background-color: #ADFF2F;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+
+
 /* COMMON */
 /* Layout */
 
@@ -199,6 +211,20 @@ ul {
 /* Section album  */
 .col{
     width: calc(93%/2)
+}
+
+.border-lightgreen-left {
+    position: relative;
+}
+.border-lightgreen-left::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -100%;
+    display: flex;
+    width: 2px;
+    height: 15px;
+    background-color: #ADFF2F;
 }
 }
 
