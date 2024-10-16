@@ -76,11 +76,20 @@ body{
 
 .header-button a:hover {
     transform: scale(1.1);
-  
+
 }
 
 .cursor-text:hover{
     cursor: text
+}
+
+.img-album:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+.card:hover .fa-circle-play {
+    z-index: 2;
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
 }
 
 /* COMMON */
@@ -220,12 +229,28 @@ body{
 .img-album {
     width: 150px;
     margin-top: 10px;
+    position: relative;
+    z-index: 1;
 }
+
+.card {
+    position: relative;
+}
+
+
 
 .top-artist {
     border-radius: 50%;
 }
 
+.fa-circle-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+}
 
 
 /* FOOTER */
@@ -304,7 +329,7 @@ body{
 .col{
     width: calc(93%/4)
 }
-    
+
 }
 
 @media  screen and (min-width: 769px) {
@@ -312,5 +337,5 @@ body{
 .col{
     width: calc(93%/6)
 }
-    
+
 }
