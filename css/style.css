@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +21,7 @@ ul {
 body {
     font-family: "Montserrat", sans-serif;
 }
+
 
 /* Utilities */
 .white {
@@ -71,6 +73,7 @@ body {
     padding: 0 5px;
 }
 
+
 /* HOVER */
 .library li:hover {
     color: white;
@@ -86,23 +89,6 @@ body {
 
 .install:hover {
     color: white;
-}
-
-.header-button a:hover {
-    transform: scale(1.1);
-}
-
-.cursor-text:hover {
-    cursor: text
-}
-
-.img-album:hover {
-    transform: scale(1.05);
-    opacity: 0.5;
-}
-
-.card:hover .play {
-    z-index: 2;
 }
 
 .fa-heart:hover {
@@ -125,8 +111,9 @@ body {
     color: white;
 }
 
-.play-btn-hov:hover {
-    transform: scale(1.20);
+.song-name:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .song-bar:hover {
@@ -137,9 +124,25 @@ body {
     border-color: #ADFF2F;
 }
 
-.song-name:hover {
-    color: white;
-    text-decoration: underline;
+.header-button a:hover {
+    transform: scale(1.1);
+}
+
+.img-album:hover {
+    transform: scale(1.05);
+    opacity: 0.5;
+}
+
+.play-btn-hov:hover {
+    transform: scale(1.20);
+}
+
+.card:hover .play {
+    z-index: 2;
+}
+
+.cursor-text:hover {
+    cursor: text
 }
 
 
@@ -148,7 +151,7 @@ body {
 
 /* MAIN */
 .wrapper {
-    height: 100vh;
+    height: calc(100vh - 70px);
     width: 100%;
     display: flex;
 }
@@ -311,10 +314,6 @@ body {
 .footer {
     height: 70px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 9999;
     background-color: #282828;
 }
 
@@ -354,8 +353,15 @@ body {
     border-bottom: 4px solid white;
     width: 5%;
     display: inline-block;
-
 }
+
+.circle2 {
+    height: 10px;
+    width: 10px;
+    background-color: #ADFF2F;
+    border-radius: 50%;
+    display: none;
+  }
 
 .song-bar2 {
     border-bottom: 4px solid gray;
@@ -368,6 +374,14 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+.circle {
+  height: 5px;
+  width: 5px;
+  background-color: #ADFF2F;
+  border-radius: 50%;
+  display: none;
 }
 
 .volume-bar {
@@ -448,7 +462,6 @@ body {
         font-size: 0.5rem;
         padding-left: 5px;
     }
-
 }
 
 
@@ -463,7 +476,6 @@ body {
         font-size: 1rem;
         padding-left: 5px;
     }
-
 }
 
 @media screen and (min-width: 769px) {
@@ -477,5 +489,4 @@ body {
         font-size: 1rem;
         padding-left: 5px;
     }
-
 }
